@@ -157,6 +157,28 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
+.item-contacts.mail::before,
+.item-contacts.tel::before {
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-contacts.mail::before {
+    background-image: url(../images/envelope.svg);
+    width: 16px;
+    height: 12px;
+}
+
+.item-contacts.tel::before {
+    background-image: url(../images/smartphone.svg);
+    width: 10px;
+    height: 16px;
+}
+
 /* .line {
     border: 1px solid #ECECEC;
     width: 1600px;
@@ -267,6 +289,37 @@ text-decoration: none;
     width: 270px;
 } 
 
+.feature-item.attention::before,
+.feature-item.punctuality::before,
+.feature-item.planning::before,
+.feature-item.technology::before {
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+
+.attention::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.punctuality::before {
+        background-image: url(../images/clock.svg);
+    }
+
+.planning::before {
+        background-image: url(../images/diagram.svg);
+    }
+
+.technology::before {
+        background-image: url(../images/astronaut.svg);
+    }
+
 /* Альтернатива: .list.feature .feature-item + .feature-item {
     margin-left: 30px;
 } */
@@ -306,7 +359,7 @@ text-decoration: none;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .name {
@@ -335,6 +388,68 @@ text-decoration: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.social {
+    display: inline-flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.social-item {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.social-item:nth-last-child(-n+3) {
+    margin-left: 10px;
+}
+
+.social-item.instagram {
+    background-image: url(../images/insta.svg);
+}
+
+.social-item.twitter {
+    background-image: url(../images/Twitter.svg);
+}
+
+.social-item.facebook {
+    background-image: url(../images/Facebook.svg);
+}
+
+.social-item.linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+.social-item.instagram:hover,
+.social-item.instagram:focus {
+    background-image: url(../images/Inst.png);
+    background-color: var(--accent-color);
+}
+
+.social-item.twitter:hover,
+.social-item.twitter:focus {
+    background-image: url(../images/tv.png);
+    background-color: var(--accent-color);
+}
+
+.social-item.facebook:hover,
+.social-item.facebook:focus {
+    background-image: url(../images/f.png);
+    background-color: var(--accent-color);
+}
+
+.social-item.linkedin:hover,
+.social-item.linkedin:focus {
+    background-image: url(../images/In.png);
+    background-color: var(--accent-color);
+}
+
 /* .list.team > .item:nth-child(2n) {
     background-color: red;
 } */
@@ -355,7 +470,7 @@ text-decoration: none;
     padding-bottom: 60px;
 }
 
-.footer > .logo {
+.footer .logo {
     color: var(--white-fontcolor);
 }
 
@@ -389,6 +504,42 @@ address {
 .list .address:last-child {
     margin-bottom: 0px;
 }
+
+.footer-title {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+}
+
+.block-logo-address {
+    margin-right: 70px;
+}
+
+.sign-social {
+    padding-top: 12px;
+}
+
+.join-us.list {
+    display: flex;
+}
+    
+.join-item.instagram {
+    display: block;
+    height: 44px;
+    width: 44px;
+    background-image: url(../images/instagramtransparency.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /* Button */
 .button {
