@@ -157,6 +157,7 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
+/* Иконка тел и почта 
 .item-contacts.mail::before,
 .item-contacts.tel::before {
     display: inline-block;
@@ -177,7 +178,7 @@ text-decoration: none;
     background-image: url(../images/smartphone.svg);
     width: 10px;
     height: 16px;
-}
+} */
 
 /* .line {
     border: 1px solid #ECECEC;
@@ -531,7 +532,7 @@ address {
 }
     
 .join-item.instagram {
-    display: block;
+    display: inline-block;
     height: 44px;
     width: 44px;
     background-image: url(../images/instagramtransparency.png);
