@@ -35,7 +35,7 @@ html {
 body {
     color: var(--main-blackcolor);
     background-color: var(--main-backgroundcolor);
-    font-family: "Roboto", "Tahoma", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -554,6 +554,7 @@ address {
     letter-spacing: 0.06em;
     cursor: pointer;
     border: none;
+    border-radius: 4px;
     display: inline-block;
     padding: 10px 32px;
     min-width: 200px;
@@ -647,5 +648,5 @@ display: block;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
-    padding-bottom: 54px;
+    padding-bottom: 20px;
 }
