@@ -235,6 +235,7 @@ text-decoration: none;
 /*Section*/
 
 .section-title {
+    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -442,6 +443,17 @@ text-decoration: none;
 
 .client-icon {
     margin: 16px 32px;
+    fill: #AFB1B8;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: #2196F3;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid #2196F3;
 }
 
 /* Footer */
