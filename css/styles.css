@@ -177,12 +177,10 @@ text-decoration: none;
 .icon-tel {
     margin-right: 10px;
     fill: #757575;
-    /* fill: #757575; */
 }
 
 .icon-mail:hover,
 .icon-tel:hover {
-    /* fill: var(--accent-color); */
     fill: var(--accent-color);
 }
 
@@ -283,21 +281,23 @@ text-decoration: none;
     width: 270px;
 } 
 
-.feature-item.attention::before,
-.feature-item.punctuality::before,
-.feature-item.planning::before,
-.feature-item.technology::before {
-    display: inline-block;
-    content: "";
+
+.box {
+    display: block;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 4px;
     background-color: #F5F4FA;
 }
 
+.icon-feature {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 
 .attention::before {
     background-image: url(../images/antenna.svg);
 }
@@ -312,7 +312,7 @@ text-decoration: none;
 
 .technology::before {
         background-image: url(../images/astronaut.svg);
-    }
+    } */
 
 /* Альтернатива: .list.feature .feature-item + .feature-item {
     margin-left: 30px;
@@ -419,6 +419,31 @@ text-decoration: none;
 /* .list.team > .item:nth-child(2n) {
     background-color: red;
 } */
+
+/* Наши клиенты */
+
+.list.clients {
+    display: flex;
+    align-items: center;
+}
+
+.client-link {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-right: 30px;
+}
+
+.client-link.last {
+    margin-right: 0;
+}
+
+.client-icon {
+    margin: 16px 32px;
+}
+
 /* Footer */
 
 .footer.container,
