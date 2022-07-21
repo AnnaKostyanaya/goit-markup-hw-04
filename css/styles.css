@@ -404,7 +404,7 @@ text-decoration: none;
     align-items: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
+    border-radius: 22px;
     border: none;
     background-color: inherit;
 }
@@ -562,7 +562,7 @@ address {
     align-items: center;
     height: 44px;
     width: 44px;
-    border-radius: 50%;
+    border-radius: 22px;
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
 }
