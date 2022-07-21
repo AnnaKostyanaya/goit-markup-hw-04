@@ -401,6 +401,7 @@ text-decoration: none;
 
 .social-link {
     display: inline-block;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
