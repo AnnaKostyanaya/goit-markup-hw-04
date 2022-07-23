@@ -157,22 +157,15 @@ text-decoration: none;
 }
 
 .icon-mail,
-.item-contacts.mail>.link,
-.icon-tel,
-.item-contacts.tel>.link {
-    display: inline-block;
-}
-
-.icon-mail,
 .icon-tel {
     margin-right: 10px;
     fill: #757575;
 }
 
-.icon-mail:hover,
-.icon-mail:focus,
-.icon-tel:hover,
-.icon-tel:focus {
+a:hover .icon-mail,
+a:focus .icon-mail,
+a:hover .icon-tel,
+a:focus .icon-tel {
     fill: var(--accent-color);
 }
 
@@ -276,7 +269,9 @@ text-decoration: none;
 
 
 .box {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -284,11 +279,6 @@ text-decoration: none;
     background-color: #F5F4FA;
     text-align: center;
     
-}
-
-.icon-feature {
-    display: inline-block;
-    margin-top: 25px;
 }
 
 /* 
@@ -408,16 +398,15 @@ text-decoration: none;
 
 .team-icon {
     fill: #AFB1B8;
-    padding: 25%;
 }
 
-.instagram,
+/* .instagram,
 .twitter,
 .facebook,
 .linkedin {
     width: 44px;
     height: 44px;
-}
+} */
 
 
 .social-link:hover,
@@ -425,10 +414,17 @@ text-decoration: none;
     background-color: var(--accent-color)
 }
 
-.team-icon:hover,
+/* .team-icon:hover,
 .team-icon:focus {
     fill: var(--white-fontcolor);
+} */
+
+a:hover .team-icon, 
+a:focus .team-icon {
+    fill: var(--white-fontcolor)
 }
+
+
 /* .list.team > .item:nth-child(2n) {
     background-color: red;
 } */
@@ -454,7 +450,7 @@ text-decoration: none;
     width: 100%;
     height: 100%;
     border: 1px solid rgba(175, 177, 184, 1);
-    
+    border-radius: 4px;
 }
 
 .client-link.last {
@@ -465,8 +461,8 @@ text-decoration: none;
     fill: #AFB1B8;
 }
 
-.client-icon:hover,
-.client-icon:focus {
+a:hover .client-icon,
+a:focus .client-icon {
     fill: #2196F3;
 }
 
@@ -567,11 +563,7 @@ address {
     width: 44px;
     border-radius: 22px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.join-icon {
-    padding: 25%;
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 .join-item .social-link:hover,
@@ -640,6 +632,7 @@ address {
 .button-portfolio:focus {
     color: var(--white-fontcolor);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .foto {
